@@ -51,12 +51,6 @@ def main_bin(
     Python byecode decompiler for 3.10 bytecode
     """
     version_tuple = sys.version_info[0:2]
-    if version_tuple < (3, 7):
-        print(
-            f"Error: {program} runs from Python 3.7 or greater."
-            f""" \n\tYou have version: {version_tuple_to_str()}."""
-        )
-        sys.exit(-1)
 
     out_base = None
     source_paths = []
